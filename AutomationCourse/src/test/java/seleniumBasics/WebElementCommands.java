@@ -14,6 +14,9 @@ public class WebElementCommands extends Base{
 		showBtn.click();
 		WebElement msgTxt = driver.findElement(By.id("message-one"));
 		System.out.println(msgTxt.getText());
+		System.out.println(showBtn.getTagName());
+		System.out.println(showBtn.getCssValue("color"));
+		msgBox.clear();
 	}
 
 	public static void main(String[] args) {
