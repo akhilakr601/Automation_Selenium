@@ -29,7 +29,7 @@ public class AlertHandling extends Base {
 		WebElement promptAlert = driver.findElement(By.id("promtButton"));
 		promptAlert.click();
 		Alert al = driver.switchTo().alert();
-		al.sendKeys("helloo akhila");
+		al.sendKeys("helloo");
 		al.accept();
 		
 
