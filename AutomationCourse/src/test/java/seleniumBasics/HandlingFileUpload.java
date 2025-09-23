@@ -32,8 +32,8 @@ public class HandlingFileUpload extends Base{
 		
 		Robot r=new Robot();
 		r.delay(2500);
-		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyRelease(KeyEvent.VK_ENTER);
+//		r.keyPress(KeyEvent.VK_ENTER);
+//		r.keyRelease(KeyEvent.VK_ENTER);
 		r.keyPress(KeyEvent.VK_CONTROL);
 		r.keyPress(KeyEvent.VK_V);
 		r.keyRelease(KeyEvent.VK_CONTROL);
