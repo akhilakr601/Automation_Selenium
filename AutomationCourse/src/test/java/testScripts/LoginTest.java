@@ -11,7 +11,7 @@ import automationCore.TestNGBase;
 
 public class LoginTest extends TestNGBase{
 	@Test
-	public void verifyWhetherUserIsAbleToLoginWithValidCredentials() {
+	public void verifyLoginWithValidCredentials() {
 		WebElement username = driver.findElement(By.id("user-name"));
 		username.sendKeys("standard_user");
 		WebElement password = driver.findElement(By.id("password"));
@@ -20,7 +20,7 @@ public class LoginTest extends TestNGBase{
 		loginBtn.click();
 	}
 	@Test
-	public void verifyWheatherUserIsAbleToLoginWithValidUsernameAndInvalidPassword() {
+	public void verifyLoginWithValidUsernameInvalidPassword() {
 		WebElement username = driver.findElement(By.id("user-name"));
 		username.sendKeys("standard_user");
 		WebElement password = driver.findElement(By.id("password"));
@@ -30,16 +30,16 @@ public class LoginTest extends TestNGBase{
 		
 	}
 	@Test
-	public void verifyWheatherUserIsAbleToLoginWithInValidUsernameAndValidPassword() {
+	public void verifyLoginWithInvalidUsernameValidPassword() {
 		WebElement username = driver.findElement(By.id("user-name"));
-		username.sendKeys("user");
+		username.sendKeys("invaliduser");
 		WebElement password = driver.findElement(By.id("password"));
 		password.sendKeys("secret_sasae");
 		WebElement loginBtn = driver.findElement(By.id("login-button"));
 		loginBtn.click();
 	}
 	@Test
-	public void verifyWheatherUserIsAbleToLoginWithInValidCredentials() {
+	public void verifyLoginWithInValidCredentials() {
 		WebElement username = driver.findElement(By.id("user-name"));
 		username.sendKeys("user1");
 		WebElement password = driver.findElement(By.id("password"));

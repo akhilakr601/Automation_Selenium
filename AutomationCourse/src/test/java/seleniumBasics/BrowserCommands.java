@@ -24,8 +24,8 @@ public class BrowserCommands extends Base{
 		
 		BrowserCommands browser = new BrowserCommands();
 		browser.initializeBrowser();
-//		browser.verifyBrowserCommands();
-		browser.verifyNavigation();
+		browser.verifyBrowserCommands();
+//		browser.verifyNavigation();
 	}
 
 }
